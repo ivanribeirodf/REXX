@@ -1,0 +1,26 @@
+/*REXX*/
+ SAY '----------------------'
+ SAY '- PROGRAMA DE MEDIA  -'
+ SAY 'TECLE ENTER'
+
+N1 = 0
+N2 = 0
+MEDIA = 0
+
+SAY 'DIGITE NOTA1: '
+  PULL N1
+SAY 'DITENE NOTA2: '
+  PULL N2
+    MEDIA = (N1 + N2) / 2
+      SAY 'MEDIA DO ALUNO: ' MEDIA
+      TRACE I         /* A=ALL, R=RESULT, I=INFORM*/
+    IF MEDIA >= 7 THEN
+      SAY 'ALUNO APROVADO'
+      ELSE
+        IF MEDIA >=3 THEN
+          SAY 'ALUNO EM RECUPERACAO'
+        ELSE
+          SAY 'ALUNO REPROVADO'
+      TRACE OFF
+SAY 'AGORA VAI!!'
+

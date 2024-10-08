@@ -1,0 +1,8 @@
+/*REXX*/                                                                00010000
+IDADE = 49                                                              00020001
+SALARIO = 3000.80                                                       00030001
+NOME = 'IVAN RIBEIRO'                                                   00040001
+ SAY 'IDADE....:' IDADE                                                 00050001
+ SAY 'SALARIO..:' SALARIO                                               00060001
+ SAY 'NOME.....:' NOME                                                  00070001
+

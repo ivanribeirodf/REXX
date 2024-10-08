@@ -1,0 +1,25 @@
+/*REXX*/
+ SAY '----------------------'
+ SAY '- PROGRAMA DE MEDIA  -'
+ SAY 'TECLE ENTER'
+
+PSD = LISTDSI('SYS2.IVAN.REXX' 'DIRECTORY')
+  IF PSD = 0 THEN
+    DO
+      SAY 'NOME DO DATASET: ' SYSDSNAME
+      SAY 'FORMATO:         ' SYSRECFM
+      SAY 'ORGANIZACAO:     ' SYSDSORG
+      SAY 'QT MEMBROS:      ' SYSMEMBERS
+        IF SYSMEMBERS > 0 THEN
+          DO
+            X = OUTTRAP('MEMBRO.')
+              "LISTDS ('SYS2.IVAN.REXX') MEMBERS"
+            X = OUTTRAP('OFF')
+            DO I = 1 TO MEMBRO.0
+              SAY 'MEMBRO... ' MEMBROS.I
+            END
+          END
+    END
+ ELSE
+   SAY 'PARTICIONADO NAO EXISTE'
+

@@ -1,0 +1,9 @@
+/*REXX*/                                     
+ SAY '----------------------'                
+ SAY '- PROGRAMA DE MEDIA  -'                
+ SAY 'TECLE ENTER'                           
+ SAY 'NUMERO A SER MULTIPLICADO ' ; PULL NUM 
+                                             
+DO I = 1 TO 10                               
+  SAY NUM 'X' I '=' NUM*I                    
+END                                          
